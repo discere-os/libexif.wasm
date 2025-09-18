@@ -65,3 +65,23 @@ depcomp
 INSTALL
 test-driver
 ChangeLog.git
+
+# libexif.wasm build artifacts
+build-dual-*/
+install/
+dist/
+npm/
+
+# WASM build files
+*.wasm
+*.js.map
+
+# Deno
+deno.lock
+
+# No JavaScript in TypeScript projects (except build outputs)
+src/**/*.js
+tests/**/*.js
+bench/**/*.js
+!install/**/*.js
+!npm/**/*.js
